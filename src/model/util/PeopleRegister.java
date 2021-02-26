@@ -23,7 +23,7 @@ public class PeopleRegister {
         return sc.nextInt();
     }
 
-    public void peopleMenu() {
+    public void menuPeople() {
 
         int opc = menu();
 

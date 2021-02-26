@@ -1,5 +1,7 @@
 package application;
 
+import model.entities.EventClass;
+import model.util.EventClassRegister;
 import model.util.PeopleRegister;
 
 import java.util.Scanner;
@@ -27,6 +29,7 @@ public class Program {
         System.out.println(" ");
 
         PeopleRegister people = new PeopleRegister();
+        EventClassRegister event = new EventClassRegister();
 
         int opc = mainMenu();
 
@@ -34,13 +37,13 @@ public class Program {
 
             switch (opc) {
                 case 1:
-                    people.peopleMenu();
+                    people.menuPeople();
                     break;
                 case 2:
-                   // event.menuCliente();
+                     event.menuClass();
                     break;
                 case 3:
-                 //   coffee.menuVendas();
+                 //   coffee.menuCoffee();
                     break;
                 default:
                     System.out.println("OPCAO INVALIDA");
