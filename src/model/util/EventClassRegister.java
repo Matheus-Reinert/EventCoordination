@@ -28,8 +28,7 @@ public class EventClassRegister {
     public void menuClass() {
 
         int opc = menu();
-
-
+        
         while (opc != 0) {
             switch (opc) {
                 case 1 -> {
