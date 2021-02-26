@@ -15,7 +15,7 @@ public class EventClassRegister {
 
     public int menu() {
 
-        System.out.println("Event classes Menu");
+        System.out.println("-----Event classes Menu-----");
         System.out.println("1 - Register class");
         System.out.println("2 - Class list");
         System.out.println("0 -  Exit");
@@ -28,7 +28,7 @@ public class EventClassRegister {
     public void menuClass() {
 
         int opc = menu();
-        
+
         while (opc != 0) {
             switch (opc) {
                 case 1 -> {

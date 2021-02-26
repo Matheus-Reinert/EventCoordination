@@ -1,6 +1,8 @@
 package application;
 
+import model.entities.CoffeeSpace;
 import model.entities.EventClass;
+import model.util.CoffeeSpaceRegister;
 import model.util.EventClassRegister;
 import model.util.PeopleRegister;
 
@@ -10,11 +12,12 @@ public class Program {
 
     public static int mainMenu() {
 
-        System.out.println(" Main menu");
+        System.out.println("\n-----MAIN MENU-----");
         System.out.println("1 - People menu");
         System.out.println("2 - Event class menu");
         System.out.println("3 - Coffee space menu");
         System.out.println("0 - Exit");
+        System.out.print("Enter an option: ");
 
         Scanner sc = new Scanner(System.in);
 
@@ -24,12 +27,13 @@ public class Program {
 
     public static void main(String[] args) {
 
-        System.out.println(" JAVA EVENT ");
+        System.out.println("------- JAVA EVENT ------");
 
         System.out.println(" ");
 
         PeopleRegister people = new PeopleRegister();
         EventClassRegister event = new EventClassRegister();
+        CoffeeSpaceRegister coffee = new CoffeeSpaceRegister();
 
         int opc = mainMenu();
 
@@ -43,7 +47,7 @@ public class Program {
                      event.menuClass();
                     break;
                 case 3:
-                 //   coffee.menuCoffee();
+                    coffee.menuCoffee();
                     break;
                 default:
                     System.out.println("OPCAO INVALIDA");

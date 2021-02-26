@@ -17,7 +17,7 @@ public class PeopleRegister {
         System.out.println("1 - People register");
         System.out.println("2 - Show People");
         System.out.println("0 - Exit");
-        System.out.println("Enter an option: ");
+        System.out.print("Enter an option: ");
 
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
