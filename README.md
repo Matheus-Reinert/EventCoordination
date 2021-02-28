@@ -1,5 +1,6 @@
 # EventCoordination
-Após compilar o programa da IDE será visível um menu
+Após compilar o programa na IDE será visível um menu
+
 
 -----MAIN MENU-----
 1 - People
@@ -7,5 +8,6 @@ Após compilar o programa da IDE será visível um menu
 3 - Coffee space
 0 - Exit
 Enter an option: 
+
 
 Todas opções podem criar e visualizar.
